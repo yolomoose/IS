@@ -7,19 +7,18 @@
     <script src="m20_data.js"></script>
     <script>
 
-     for (card_index = 0; card_index<=280; card_index++)
-     {
-       var textnode = document.createTextNode(magic_data.cards[card_index].name);
+     for (card_index = 0; card_index<=280; card_index++) {
+       var card = magic_data.cards[card_index]
+       var name_textnode = document.createTextNode(card.name);       
+       var mana_textnode = document.createTextNode(card.manaCost);
        var listnode = document.createElement("li");
-       listnode.appendChild(textnode);
+       listnode.appendChild(name_textnode);
+       listnode.appendChild(mana_textnode);
        document.getElementById("card-names").appendChild(listnode);
      }
-      {
-        var textnode = document.createTextNode(magic_data.cards[manaCost[.name);
-        var listnode =document.createElement("li");
-        listnode.appendChild(textnode);
-        document.getElementById("manaCost").appendChild(listnode);
-                                                                         }                                                                   
+      
+   
+                                                                                                                                           
     </script>
     <p>Thank you for visiting Infinite Scrying :)</p>
   </body>
