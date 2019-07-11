@@ -15,6 +15,7 @@
        listnode.appendChild(name_textnode);
        if(card.type!='Land'){
          listnode.appendChild(mana_textnode);
+       if(card.manacost!=undefined)
        }
        
        document.getElementById("card-names").appendChild(listnode);
