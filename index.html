@@ -13,8 +13,7 @@
        var mana_textnode = document.createTextNode(card.manaCost);
        var listnode = document.createElement("li");
        listnode.appendChild(name_textnode)
-       if(card.type!='Land'){
-        if(card.manacost==undefined)
+       if(card.manaCost==undefined){
          listnode.appendChild(mana_textnode);
        }
        
